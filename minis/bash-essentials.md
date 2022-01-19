@@ -1,5 +1,5 @@
-Ashu Patel
-patel.950@wright.edu
+- Ashu Patel
+- patel.950@wright.edu
 ## Basic Commands
 
 - `man`
