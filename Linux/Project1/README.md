@@ -13,7 +13,8 @@
 ## How to run this script?
 
 - For the script to run properly you will need to run the script as sudo.
-- Example :
+
+### Example
 
 ```bash
 sudo ./userscript
