@@ -19,7 +19,8 @@ echo "Loading functions of user creation script"
 	remove-single (){
 		read -p "Enter a existing Username to be removed: " rmuser
 		userdel  $rmuser
-		echo "User Delted"
+		rm -r /home/$rmuser 
+		echo "User Deleted"
 	}
 
 	add-bulk (){
@@ -28,16 +29,17 @@ echo "Loading functions of user creation script"
 			for name in $(cat $bulkinput); do
 	       			useradd -g org -m -r -s /bin/bash -p 'password' $name
       				echo $name >> bulkuser.txt
-				echo "Users Created"
 			done 	
+		echo "Users Created"
 	}
 
 	remove-bulk () {
 		read -e -p "Enter a file with Usernames to be removed: " brinput
 			for names in $(cat $brinput); do 
 				userdel  $names
-				echo "Users Delted"
+				rm -r /home/$names
 			done
+		echo "Users Deleted"
 	}
 
 add-single	
