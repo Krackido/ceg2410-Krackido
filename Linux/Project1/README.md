@@ -7,7 +7,7 @@
 
 ## Screenshots of the script running
 
-![demo of working script]()
+![demo of working script](demo.PNG)
 
 
 ## How to run this script?
@@ -17,9 +17,9 @@
 ### Example
 
 ```bash
-sudo ./userscript
+$ sudo ./userscript
 #or
-sudo bash ./userscript
+$ sudo bash ./userscript
 ```
 
 ## Expected file Contents
