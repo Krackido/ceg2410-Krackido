@@ -1,0 +1,17 @@
+---
+
+linux:	
+  hosts:
+    aws-ubuntu:
+      ansible_host: 18.215.100.91
+      ansible_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: /home/toasty/ceg2410/ceg2410-key.pem
+
+windows:
+  hosts:
+
+allsystems:
+  children:
+    linux:
+    windows:

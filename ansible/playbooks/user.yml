@@ -1,0 +1,14 @@
+---
+- name: Ansible Create user functionality module demo
+  hosts: linux
+  remote_user: ubuntu
+  tasks:
+
+    - name: Add the user 'Ashu Patel' with a specific uid and a primary group of 'org'
+      ansible.builtin.user:
+        name: apatel
+        comment: AshuPatel
+        uid: 1999
+        group: org
+        createhome: yes
+        home: /home/apatel  
