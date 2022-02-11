@@ -1,0 +1,45 @@
+#! /bin/bash
+
+
+install-package () {
+	echo "Installing packages"
+	echo "User ID running this script is $EUID with username ${whoami}"
+	if [[ $EUID -eq 0 ]]
+	then
+		apt update
+		apt-get install -y \
+			git \
+			vim \
+			sl \
+			cowsay \
+			fortune
+	else
+		echo "install-packages must be run as root"
+	fi 
+}
+
+install-colorscheme() {
+	
+	echo "Installing vim colorscheme"
+	
+	if [[ -d "$HOME/.vim/colors" ]]
+	then
+		echo "Directory already exists"
+	else
+		echo "Directory does not exist.  Creating directory "
+		mkdir -p ~/.vim/colors
+	fi 
+
+
+wget -q -P ~/.vim/colors "https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim"
+
+echo "colorscheme jellybeans" > ~./vimrc
+
+echo "colorscheme installed, open a file in vim to see!"
+
+}
+
+echo "Hello from installation script"
+install-colorsheme
+install-package
+
