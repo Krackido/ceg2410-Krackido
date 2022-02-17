@@ -13,5 +13,5 @@
 - Connect the external hard drive and transfer all the data that was recovered.
 
 
-- Personally I would not trust myself to do this if the data is of high importance. I would hand this off to a professional service that might not permanently overwrite the data.
- 
+## Why I would ask my boss to give it to a professional service ?
+- Personally I would not trust myself to do this if the data is of high importance. I would hand this off to a professional service that might not permanently overwrite the data. A professional service would probably able to fix the write head and then back up the data which might be of more importance. 
