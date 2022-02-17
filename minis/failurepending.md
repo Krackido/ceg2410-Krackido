@@ -1,0 +1,17 @@
+- Ashu Patel
+- patel.950@wright.edu
+
+
+
+## Additional details
+- How long it has been since the click of death started.
+
+## Retrieving Data
+- Connect a external hard drive to the system and then download DiskDrill on the computer and run it to search for lost data and recover all files that are recovered and back them up to external hard drive.
+
+## Moving Data
+- Connect the external hard drive and transfer all the data that was recovered.
+
+
+- Personally I would not trust myself to do this if the data is of high importance. I would hand this off to a professional service that might not permanently overwrite the data.
+ 
