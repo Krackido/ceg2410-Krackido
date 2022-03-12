@@ -51,7 +51,7 @@ In `RAID.md` document:
 - command to remove failing disk with mdadm
   - `sudo mdadm /dev/md0 -r /dev/xvdb`
 - effect on RAID device
-  - RAID device still in opertaion but will not write prity information anymore.
+  - RAID device still in opertaion but will not write parity information anymore. If another disk fails data will be lost.
 
 ## Part 5 - rebuild it
 
