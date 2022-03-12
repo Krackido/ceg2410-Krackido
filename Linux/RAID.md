@@ -13,7 +13,7 @@ In `RAID.md` document:
   - Pros: Parity blocks scattered accross drives. And increased write speeds.
   - Cons: Can only handle 1 disk failure.
 - Command to build array
-  - sudo mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/xvdb /dev/xvdg /dev/xvdf
+  - `sudo mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/xvdb /dev/xvdg /dev/xvdf`
 
 ## Part 2 - get info
 
@@ -22,7 +22,7 @@ Verify that your RAID is created and all disks are healthy
 In `RAID.md` document:
 
 - command(s) to check RAID status
-  - cat /proc/mdstat
+  - `cat /proc/mdstat`
 - screenshot of what it looks like
 ![](workingraid.PNG)
 - How to read the output of the command(s)
@@ -35,10 +35,10 @@ Mount your RAID to a logical folder. For example, in class we discussed `/mnt` o
 In `RAID.md` document:
 
 - command(s) to create a filesystem and `mount` RAID device to a folder
-  - sudo mkfs.ext4 -F /dev/md0
+  - `sudo mkfs.ext4 -F /dev/md0`
 - verifying the RAID device is mounted
   - what commands can prove it
-    - df -h -x devtmpfs -x tmpfs 
+    - `df -h -x devtmpfs -x tmpfs` 
 
 ## Part 4 - break it
 
@@ -47,8 +47,11 @@ Pretend that one of the disks has been behaving oddly, so needs to be replaced. 
 In `RAID.md` document:
 
 - command to mark a disk as failing
+  - `sudo mdadm /dev/md0 -f /dev/xvdb`
 - command to remove failing disk with mdadm
+  - `sudo mdadm /dev/md0 -r /dev/xvdb`
 - effect on RAID device
+  - RAID device still in opertaion but will not write prity information anymore.
 
 ## Part 5 - rebuild it
 
@@ -59,6 +62,10 @@ Repair the RAID array using the new device.
 In `RAID.md` document:
 
 - command to `add` new device to RAID
+  - `sudo mdadm -a /dev/md0 /dev/xvdb`
 - verifying that the RAID device is being rebuilt
   - what commands can prove it
+    - `sudo mdadm --detail /dev/md0`
+    - `cat /proc/mstat`
 - screenshot result of rebuilt RAID array
+![](recovered.PNG)
