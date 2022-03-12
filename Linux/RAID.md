@@ -68,4 +68,5 @@ In `RAID.md` document:
     - `sudo mdadm --detail /dev/md0`
     - `cat /proc/mstat`
 - screenshot result of rebuilt RAID array
+
 ![](recovered.PNG)
