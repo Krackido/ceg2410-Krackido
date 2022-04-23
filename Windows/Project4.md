@@ -18,15 +18,17 @@
 ### Create OUs
 
 - Screenshot proof
-- Extra Credit: csv of OUs + Powershell script to generate OUs
+![Computer OU](computerproof.PNG)
+![User OU](userproof.PNG)
+![server OU](serverproof.PNG)
 
 ### Joining Users
 
-- csv file of users in repo
-- Powershell script to bulk-add users in repo
-  - Added to repo
 - Screenshot proof of users in correct OUs
-- Extra Credit: Users added to OUs via Powershell script
+![Engineer OU](engineerproof.PNG)
+![Developer OU](developerproof.PNG)
+![Finance OU](financeproof.PNG)
+![HR OU](HRproof.PNG)
 
 ### Joining Computers
 
