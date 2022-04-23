@@ -4,7 +4,11 @@
 ## Setup AD DC
 - Configuring a Windows Server to be a Domain Controller
   - Outline of basic steps, resource(s) used
-    - 
+    - Install active directory services 
+    - Select role based install
+    - Add new forest
+    - Keep hitting next
+    - Install at end
 - Domain Name: ad.toasty.org
 - Domain Controller Name: DC 1
 - Domain DNS IP: 10.0.0.186
@@ -20,6 +24,7 @@
 
 - csv file of users in repo
 - Powershell script to bulk-add users in repo
+  - Added to repo
 - Screenshot proof of users in correct OUs
 - Extra Credit: Users added to OUs via Powershell script
 
