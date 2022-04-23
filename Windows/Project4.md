@@ -31,6 +31,12 @@
 ### Joining Computers
 
 - Steps to join a new Windows Server instance to the domain
+  - Open control panel
+  - System and Security > system
+  - Change setting
+  - Computer Name click change
+  - Enter domain under member ]
+  - Restart
 - Screenshot proof of success
 - Extra Credit: Join Ubuntu Server to domain
   - How
