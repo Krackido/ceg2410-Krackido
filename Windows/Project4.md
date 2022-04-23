@@ -18,17 +18,17 @@
 ### Create OUs
 
 - Screenshot proof
-![Computer OU](computerproof.PNG)
-![User OU](userproof.PNG)
-![server OU](serverproof.PNG)
+  - ![Computer OU](computerproof.PNG)
+  - ![User OU](userproof.PNG)
+  - ![Server OU](serversproof.PNG)
 
 ### Joining Users
 
 - Screenshot proof of users in correct OUs
-![Engineer OU](engineerproof.PNG)
-![Developer OU](developerproof.PNG)
-![Finance OU](financeproof.PNG)
-![HR OU](HRproof.PNG)
+  - ![Engineer OU](engineerproof.PNG)
+  - ![Developer OU](developerproof.PNG)
+  - ![Finance OU](financeproof.PNG)
+  - ![HR OU](HRproof.PNG)
 
 ### Joining Computers
 
