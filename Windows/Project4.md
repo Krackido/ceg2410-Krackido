@@ -40,9 +40,7 @@
   - Enter domain under member ]
   - Restart
 - Screenshot proof of success
-- Extra Credit: Join Ubuntu Server to domain
-  - How
-  - Proof
+ - could not get windows server instance to connect.
 
 ### Creating Groups
 
