@@ -77,5 +77,11 @@
 
 ### Managing OUs 
 - How to delagate control of an OU to a group
+  - ADUC > Right click on OU > Delegate Control > Select group > Select Tasks to delegate
 - Which OUs they now delegate
+  - `hr_finance_admins`- control of Finance and HR
+  - `eng_dev_admins`- control of Developers and Engineers 
 - What permissions they were given (and why you think the scope is appropriate)
+  - `hr_finance_admins`- Reset user password and etc, Read all user information 
+  - `eng_dev_admins`- Reset user password and etc, Read all user information
+  - I chose these common tasks because to create a safe environment where there would be less accidents resulting in someone loosing their data. Also so there is a another human that can verify what is about to be done is correct.
